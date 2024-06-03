@@ -1,6 +1,4 @@
-# Contents
-
-
+# Affordable enviroment to learn ARM  - Hacking STM tricky to make fake STLink useless 
 
 [Introduction](#Introduction)
 
@@ -15,8 +13,6 @@
 [Using vscode to compile](#Using-vscode-to-compile)
 
 [Using vscode to debug](#Using-vscode-to-debug)
-
-
 
 
 
