@@ -75,7 +75,7 @@ apt install gdb-multiarch
 
 If everything ok you will get this screen
 
-![gcc](https://github.com/lord-feistel/baremetal/blob/master/images/output_make.png)
+![gcc](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/output_make.png)
 
 and the led will start to blink
 
@@ -123,7 +123,7 @@ Note: I get this code from an attempt to use the openocd on  the line :
 **Terminal 1**
 After run the command on the session  `running openocd` 
 
-![openocd](https://github.com/lord-feistel/baremetal/blob/master/images/terminal_01_debug.png)
+![openocd](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/terminal_01_debug.png)
 
 **Terminal 2**
 
@@ -133,20 +133,20 @@ gdb-multiarch ./app.elf
 ...
 (gdb) target remote localhost:3333
 ```
-![gdb](https://github.com/lord-feistel/baremetal/blob/master/images/terminal_02_debug.png)
+![gdb](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/terminal_02_debug.png)
 
 ## Using vscode to compile
 
 In order to use the vscode to debug please download the files : `launch.json` and `tasks.jason` and do as in the following image ( they are on the .vscode of the repo project, thus just certifies they are there )
 
-![gdb](https://github.com/lord-feistel/baremetal/blob/master/images/vscode_output.png)
+![gdb](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/vscode_output.png)
 
 
 ## Using vscode to debug
 
 1. Start the GDB
 
-![gdb](https://github.com/lord-feistel/baremetal/blob/master/images/start_gdb.png)
+![gdb](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/start_gdb.png)
 
 
 2. Run the openocd 
@@ -155,5 +155,5 @@ sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg  -f /usr/shar
 ```
 3. The debug will start to work
 
-![gdb running](https://github.com/lord-feistel/stm32_baremetal/blob/master/images/debug_running.png)
+![gdb running](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/debug_running.png)
 
