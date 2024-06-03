@@ -1,0 +1,36 @@
+// Used to debug not official blue pill
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to gdbserver",
+            "type": "cppdbg",
+            // comand used before the gdb to be launched
+            // I prefer dont use it.
+            // "preLaunchTask": "st-flash make", 
+            "request": "launch",
+            // the binary location
+            "program": "${workspaceRoot}/io.elf",  
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerServerAddress": "localhost:3333",
+            // the path to the gdb multi architecture installed before
+            "miDebuggerPath": "/usr/bin/gdb-multiarch"
+        }    
+    
+    
+    
+    
+    ]
+}

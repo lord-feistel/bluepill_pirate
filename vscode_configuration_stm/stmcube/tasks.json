@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make firmware",
+            "type": "shell",
+            "command": "make",
+            "args":["-C", "${workspaceRoot}/Debug", "all"],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clean firmware",
+            "type": "shell",
+            "command": "make",
+            "args":["-C", "${workspaceRoot}/Debug", "clean"],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+            
+      ]
+  
+}

@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "st-flash make",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "st-flash clean",
+            "type": "shell",
+            "command": "make clean",
+            "problemMatcher": []
+        },
+
+      ]
+  
+}
