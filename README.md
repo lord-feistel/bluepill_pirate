@@ -1,3 +1,27 @@
+# Contents
+
+
+## Installation and adjusts
+[Introduction](#Introduction)
+
+## Installation and adjusts
+[Installing openocd and gdb and gcc cross platform](#Installing)
+
+[Adjusts for not official blue pill hardware](#Adjusting-script-for-the-Chinese-version)
+
+## Basic compilation and debug
+[Compiling the code](#compiling-the-code) 
+
+[Example of debug session](#Example-of-debug-session)
+
+## Using Vscode to compile and debug
+[Using vscode to compile](#Using-vscode-to-compile)
+
+[Using vscode to debug](#Using-vscode-to-debug)
+
+
+
+
 
 # Introduction
 
@@ -39,23 +63,6 @@ The clone of stlink:
 ![gcc](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/stlink_ali.png)
 
 As van be observed is very low price if compare with original solution
-
-# Contents
-
-## Installation and adjusts
-[Installing openocd and gdb and gcc cross platform](#Installing)
-
-[Adjusts for not official blue pill hardware](#Adjusting-script-for-the-Chinese-version)
-
-## Basic compilation and debug
-[Compiling the code](#compiling-the-code) 
-
-[Example of debug session](#Example-of-debug-session)
-
-## Using Vscode to compile and debug
-[Using vscode to compile](#Using-vscode-to-compile)
-
-[Using vscode to debug](#Using-vscode-to-debug)
 
 
 ## Installing
