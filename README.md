@@ -80,6 +80,7 @@ sudo apt install openocd
 apt install gcc-arm-none-eabi
 ```
 
+
 For the `gdb` is very important to remember that nowadays a separated `gdb` is not needed. It's just needed to install the `gdb-multiarch`
 
 ```
@@ -88,8 +89,8 @@ apt install gdb-multiarch
 
 ## compiling the code
 
-    git clone https://github.com/lord-feistel/stm32_baremetal
-    cd stm32_baremetal
+    git clone https://github.com/lord-feistel/bluepill_pirate.git
+    cd gpio_c
     make
 
 If everything ok you will get this screen
@@ -97,6 +98,25 @@ If everything ok you will get this screen
 ![gcc](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/output_make.png)
 
 and the led will start to blink
+
+**IMPORTANT NOTE**
+
+You must check if the name of the cross-compiler installed is matching in the project Makefile or you can get an error as following
+![gcc](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/error_gpp.png)
+
+This process  was made long ago, recently I tried to install and my compiler was called as following
+
+![gcc](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/mycpp.png)
+
+In this case you need to change here in the Makefile:
+
+![gcc](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/makefile.png)
+
+Also if you get permission denied when Makefile try to flash the firmware you can try :
+
+ ``sudo st-flash write io.bin 0x8000000``
+
+if it works please change the permissions.
 
 ## running openocd
 
@@ -175,4 +195,5 @@ sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg  -f /usr/shar
 3. The debug will start to work
 
 ![gdb running](https://github.com/lord-feistel/bluepill_pirate/blob/main/images/debug_running.png)
+
 
